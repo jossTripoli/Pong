@@ -366,6 +366,7 @@ GameObject:
   - component: {fileID: 814423613}
   - component: {fileID: 814423612}
   - component: {fileID: 814423611}
+  - component: {fileID: 814423615}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -382,7 +383,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 814423610}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 79278f7293bfb3c449a16cd810ef70f6, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -415,7 +416,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 79278f7293bfb3c449a16cd810ef70f6, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -487,6 +488,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &814423615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814423610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9220ab9bfb35e814c9e66beeefb8f549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 200
 --- !u!1 &1169586246
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,6 +702,7 @@ GameObject:
   - component: {fileID: 1708719212}
   - component: {fileID: 1708719211}
   - component: {fileID: 1708719210}
+  - component: {fileID: 1708719214}
   m_Layer: 0
   m_Name: Computer Paddle
   m_TagString: Untagged
@@ -809,6 +824,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1708719214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708719209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b8a4bce34ca6640adb27682b0ff035, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  ball: {fileID: 814423612}
 --- !u!1 &1769784666
 GameObject:
   m_ObjectHideFlags: 0
