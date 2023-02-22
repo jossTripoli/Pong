@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Ball : MonoBehaviour
@@ -15,10 +13,17 @@ public class Ball : MonoBehaviour
     // called first frame script is executed 
     private void Start()
     {
+        ResetPosition();
         AddStartingForce();
     }
 
-    private void AddStartingForce()
+    public void ResetPosition()
+    {
+        _rigidbody.position = Vector3.zero;
+        _rigidbody.velocity = Vector3.zero;
+    }
+
+    public void AddStartingForce()
     {
         // make ball start going in random direction left or right like a coin flip
         float x = Random.value < 0.5f ? -1.0f : 1.0f;
@@ -33,5 +38,6 @@ public class Ball : MonoBehaviour
     {
         _rigidbody.AddForce(force);
     }
+
 
 }
