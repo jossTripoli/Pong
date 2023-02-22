@@ -28,9 +28,4 @@ public class PlayerPaddle : Paddle
         }
     }
 
-    public void ResetPosition()
-    {
-        _rigidbody.position = new Vector2(_rigidbody.position.x, 0.0f);
-        _rigidbody.velocity = Vector2.zero;
-    }
 }

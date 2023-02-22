@@ -1526,6 +1526,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 814423615}
+  playerPaddle: {fileID: 412137082}
+  computerPaddle: {fileID: 1708719214}
+  displayPlayerScore: {fileID: 1978387987}
+  displayComputerScore: {fileID: 510974342}
 --- !u!4 &2075342316
 Transform:
   m_ObjectHideFlags: 0

@@ -17,20 +17,22 @@ public class GameManager : MonoBehaviour
     {
         _playerScore++;
         displayPlayerScore.text = _playerScore.ToString();
-        playerPaddle.ResetPosition();
-
-        ball.ResetPosition();
-        ball.AddStartingForce();
+        ResetRound();
     }
 
     public void ComputerScores()
     {
         _computerScore++;
-        displayPlayerScore.text = _computerScore.ToString();
-
-        ball.ResetPosition();
-        ball.AddStartingForce();
-
+        displayComputerScore.text = _computerScore.ToString();
+        ResetRound();
     }
 
+
+    private void ResetRound()
+    {
+        playerPaddle.ResetPosition();
+        computerPaddle.ResetPosition();
+        ball.ResetPosition();
+        ball.AddStartingForce();
+    }
 }
